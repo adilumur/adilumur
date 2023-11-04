@@ -1,0 +1,1091 @@
+{
+  "entities": [
+    {
+      "name": "Adresa",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_adresa",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "ulice",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "cislo_domu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "mesto",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "pos",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 877.1404759997417,
+        "y": -44.342861720493914,
+        "width": 212.44285351889425,
+        "height": 111.984375
+      }
+    },
+    {
+      "name": "Byt",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_byt",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "patro",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "cislo_bytu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 887.311110920376,
+        "y": -216.47778235541446,
+        "width": 193.38332970937108,
+        "height": 95.3125
+      }
+    },
+    {
+      "name": "Firma",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_firma",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 215.24999976158142,
+        "y": 313.75,
+        "width": 152.5,
+        "height": 75
+      }
+    },
+    {
+      "name": "Najemce",
+      "parent": null,
+      "attr": [
+        {
+          "name": "trvale_bydliste",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": null
+        },
+        {
+          "name": "plat",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": null
+        },
+        {
+          "name": "kde_pracuje",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 776.1920633013287,
+        "y": 260.6913673310053,
+        "width": 199.057932883974,
+        "height": 162.999981880188
+      }
+    },
+    {
+      "name": "Osoba",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_osoba",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "osobni_cislo",
+          "primary": false,
+          "unique": true,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "jmeno",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "prijmeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_narozeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": -293.6388927035862,
+        "y": -41.484375000000114,
+        "width": 295.3333333333333,
+        "height": 114.44444444444446
+      }
+    },
+    {
+      "name": "Platba",
+      "parent": null,
+      "attr": [
+        {
+          "name": "datum_placeni",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "mnozstvi",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 676.3849206349204,
+        "y": 16.246031746031775,
+        "width": 164.64285332815973,
+        "height": 75
+      }
+    },
+    {
+      "name": "Smlouva_firma_najemce",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_smlouva_firma_najemce",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_podepsani",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 443.015873015873,
+        "y": 306.3492063492064,
+        "width": 260.01190094720744,
+        "height": 90
+      }
+    },
+    {
+      "name": "Smlouva_firma_vlastnik",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_smlouva_firma_vlastnik",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_podepsani",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 27.80555174085825,
+        "y": -239.80034722222214,
+        "width": 298.86111492580835,
+        "height": 78.734375
+      }
+    },
+    {
+      "name": "Smlouva_najemni",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_smlouva_najemni",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_podepsani",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_zacatek_pronajmu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_konec_pronajmu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 271.69444062974713,
+        "y": 3.65079365079373,
+        "width": 304.31332009936114,
+        "height": 111.89065551757812
+      }
+    },
+    {
+      "name": "Stat",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_stat",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 907.0650791743449,
+        "y": 135.35158272395051,
+        "width": 203.29602812206895,
+        "height": 61.96875
+      }
+    },
+    {
+      "name": "Vlastnik",
+      "parent": null,
+      "attr": [],
+      "transform": {
+        "x": 515.5555555555555,
+        "y": -267.13368055555566,
+        "width": 121,
+        "height": 111.890625
+      }
+    },
+    {
+      "name": "Zamestnanec",
+      "parent": null,
+      "attr": [],
+      "transform": {
+        "x": -43.500003814697266,
+        "y": 305.29998779296875,
+        "width": 120,
+        "height": 92.0250244140625
+      }
+    }
+  ],
+  "relations": [
+    [
+      {
+        "entity": "Byt",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 945.811110920376,
+            "y": -121.16528235541446,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 945.7257934600589,
+              "y": -82.75407203795419
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Adresa",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 945.6404759997417,
+            "y": -44.342861720493914,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 945.7257934600589,
+              "y": -82.75407203795419
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Osoba",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": -264.25000381469727,
+            "y": 72.96006944444434,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": -264.25000381469727,
+              "y": 493.4322916666665
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Najemce",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 838.1111072964138,
+            "y": 423.6913492111933,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 838.1111072964138,
+              "y": 493.4322916666665
+            },
+            {
+              "x": -264.25000381469727,
+              "y": 493.4322916666665
+            }
+          ],
+          "manual": true
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Smlouva_firma_najemce",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 443.015873015873,
+            "y": 351.3492063492064,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 405.3829363887272,
+              "y": 351.2996031746032
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Firma",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 367.7499997615814,
+            "y": 351.25,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 405.3829363887272,
+              "y": 351.2996031746032
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Smlouva_firma_najemce",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 703.0277739630804,
+            "y": 346.55545177156966,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 739.6099186322047,
+              "y": 345.4443255956266
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Najemce",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 776.1920633013287,
+            "y": 344.3331994196835,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 739.6099186322047,
+              "y": 345.4443255956266
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Smlouva_firma_vlastnik",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 229.16666666666669,
+            "y": -161.06597222222214,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 230.94444253709582,
+              "y": 76.34201388888893
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Firma",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 232.72221840752496,
+            "y": 313.75,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 230.94444253709582,
+              "y": 76.34201388888893
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Smlouva_najemni",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 504.3571390424455,
+            "y": 115.54144916837186,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 504.35815677945567,
+              "y": 192.54861111111086
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Najemce",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 854.3611072964136,
+            "y": 260.6913673310053,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 854.3611072964136,
+              "y": 192.54861111111086
+            },
+            {
+              "x": 504.35815677945567,
+              "y": 192.54861111111086
+            },
+            {
+              "x": 504.35815677945567,
+              "y": 192.54861111111086
+            }
+          ],
+          "manual": true
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Smlouva_najemni",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 544.3571390424455,
+            "y": 3.65079365079373,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 544.3571390424455,
+              "y": -59.91428740309814
+            },
+            {
+              "x": 667.9285676138741,
+              "y": -59.914287416998874
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Byt",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 887.311110920376,
+            "y": -149.99340735541458,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 791.4999961853026,
+              "y": -149.99340735541458
+            },
+            {
+              "x": 791.4999961853026,
+              "y": -59.914287430899606
+            },
+            {
+              "x": 667.9285676138741,
+              "y": -59.914287416998874
+            }
+          ],
+          "manual": true
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Smlouva_najemni",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 576.0077607291082,
+            "y": 52.0170176672558,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 626.1963406820144,
+              "y": 52.88152470664379
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Platba",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 676.3849206349204,
+            "y": 53.746031746031775,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 626.1963406820144,
+              "y": 52.88152470664379
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Stat",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 946.0650791743449,
+            "y": 135.35158272395051,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 945.8527775870433,
+              "y": 101.4965480017283
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Adresa",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 945.6404759997417,
+            "y": 67.64151327950609,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 945.8527775870433,
+              "y": 101.4965480017283
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Vlastnik",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 546.0555517408583,
+            "y": -155.24305555555566,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 546.0555517408583,
+              "y": -109.11805555555571
+            },
+            {
+              "x": 389.3611072964137,
+              "y": -109.11805555555571
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Smlouva_najemni",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 389.3611072964137,
+            "y": 3.65079365079373,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 389.3611072964137,
+              "y": -109.11805555555571
+            }
+          ],
+          "manual": true
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Vlastnik",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 636.5555555555555,
+            "y": -197.45700850562457,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 761.9333332379658,
+              "y": -197.45697733334146
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Byt",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 887.311110920376,
+            "y": -197.45694616105834,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 761.9333332379658,
+              "y": -197.45697733334146
+            }
+          ],
+          "manual": true
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Vlastnik",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 515.5555555555555,
+            "y": -192.22222222244602,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 421.1111111111111,
+              "y": -192.7222222223341
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Smlouva_firma_vlastnik",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 326.66666666666663,
+            "y": -193.22222222222214,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 421.1111111111111,
+              "y": -192.7222222223341
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Vlastnik",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 563.2499961853027,
+            "y": -267.13368055555566,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 563.2499961853027,
+              "y": -321.62196180555566
+            },
+            {
+              "x": -225.50000381469727,
+              "y": -321.62196180555566
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Osoba",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": -225.50000381469727,
+            "y": -41.484375000000114,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": -225.50000381469727,
+              "y": -321.62196180555566
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Zamestnanec",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 76.49999618530273,
+            "y": 351.3125,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 145.87499797344208,
+              "y": 351.28125
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Firma",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 215.24999976158142,
+            "y": 351.25,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 145.87499797344208,
+              "y": 351.28125
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Zamestnanec",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": -43.500003814697266,
+            "y": 351.3125,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": -212.52778159247507,
+              "y": 351.3125
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Osoba",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": -212.52778159247507,
+            "y": 72.96006944444434,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": -212.52778159247507,
+              "y": 351.3125
+            }
+          ],
+          "manual": false
+        }
+      }
+    ]
+  ],
+  "notes": [
+    {
+      "text": "IO1: Vlastnik nemůže pronajmout byt, který mu nepatří\n\nIO2: Osoba nemůže byt zároveň vlastníkem, najemcem a\nzaměstnancem(Osoba musí byt jenom vlastníkem, nebo \njenom zaměstnancem, nebo jenom najemcem)\n\nIO3: Pokud vlastník a nájemce použili služby firmy není\ntřeba, aby oni uzavřeli nájemní smlouvu.",
+      "transform": {
+        "x": 695.5714247567311,
+        "y": -352.43148561507917,
+        "width": 343.75,
+        "height": 114
+      }
+    }
+  ]
+}
