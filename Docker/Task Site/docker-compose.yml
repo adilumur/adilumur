@@ -1,0 +1,50 @@
+# how to run:     docker-compose up -d --build
+# how to stop:    docker-compose down
+version: '3'
+
+services: 
+  backend:
+    container_name: backend 
+    build: ./backend
+    ports:
+      - '${backend_port:-3001}:80'
+    depends_on:
+      - 'db'
+      - 'frontend'
+    environment:
+      DB_PASSWORD: 'example'
+      DB_USER: 'docker'
+      DB_HOST: 'db'
+      DB_PORT: ''
+      DB_NAME: 'db'
+  
+  frontend:
+    container_name: frontend
+    image: php:apache
+    volumes:
+      - ./frontend:/var/www/html
+    ports:
+      - '${frontend_port:-3000}:80'
+
+  db:
+    container_name: db
+    image: 'postgres'
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: 'example'
+      POSTGRES_USER: 'docker'
+      POSTGRES_DB: 'db'
+    volumes:
+      - ./db/data.sql:/docker-entrypoint-initdb.d/data.sql
+      - ./data:/var/lib/postgresql/data
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - '8080:8080'
+volumes:
+  data:
