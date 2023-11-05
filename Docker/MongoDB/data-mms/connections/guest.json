@@ -1,0 +1,1 @@
+[{"connectionString":"me:27017","is_default_connection":false,"color":"#ff4800","name":"admin","login_database":"admin","dbName":"cases","slave_ok":false},{"connectionString":"mongo:27017","color":"#6ac76a","login_database":"admin","dbName":"cases"}]

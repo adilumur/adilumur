@@ -1,0 +1,62 @@
+
+//1
+db.students.count({birthplace:null})
+
+//2
+db.students.find(
+{
+    $or:
+    [
+        {study_group: 4},
+        {study_group:7}
+    ],
+    birthplace: "Praha"
+},
+    {name:1, surname:1, _id:0}
+).sort({surname:1})
+
+//3
+db.subjects.insertMany([
+    {
+        code: "BI-UC2",
+        name: "Uprava cibuli 2",
+        lectures: ["BLA","BLABLA", "BLABLABLA"],
+        credits: 3,
+        color: "pink"
+    }
+])
+
+//4
+db.students.updateMany(
+    {
+        birthplace:{$eq: "Brambory"}
+    },
+    {
+        $push : {
+            subject: {code: "BI-UC2", grade: 'A'}
+        }
+    }
+)
+
+//5
+db.students.aggregate([
+    {
+        "$match": { "birthplace": "Praha" } 
+    }, 
+    { 
+        "$group": 
+            { "_id": "$study_group", "count": { "$sum": 1 } } 
+    }
+])
+
+//6
+db.cities.aggregate([{
+    $nin: [
+        db.students.aggregate([
+            { 
+                "$group": 
+                { "_id": "$birthplace"}
+            }
+        ]) 
+    ]   
+}])

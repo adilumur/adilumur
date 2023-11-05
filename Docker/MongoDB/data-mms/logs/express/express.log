@@ -1,0 +1,2 @@
+[2023-11-04 22:55:52.469] [WARN] express - 172.22.0.1 - - "GET /app/main/dev/dev.html HTTP/1.1" 304 - "http://localhost:3333/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+[2023-11-04 22:55:55.494] [WARN] express - 172.22.0.1 - - "GET /app/main/dev/modals/connect/connect.html HTTP/1.1" 304 - "http://localhost:3333/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"

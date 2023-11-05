@@ -1,0 +1,40 @@
+[2022-10-19 15:16:26.470] [ERROR] syslog - settings: Error loading settings file: /root/.mms/config/guest.json
+[2022-10-19 15:16:26.472] [ERROR] syslog - { [Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/.mms/config/guest.json' }
+Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json'
+    at Error (native)
+[2023-11-04 22:52:07.176] [ERROR] syslog - settings: Error loading settings file: /root/.mms/config/guest.json
+[2023-11-04 22:52:07.179] [ERROR] syslog - { [Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/.mms/config/guest.json' }
+Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json'
+    at Error (native)
+[2023-11-04 22:55:50.569] [ERROR] syslog - settings: Error loading settings file: /root/.mms/config/guest.json
+[2023-11-04 22:55:50.570] [ERROR] syslog - { [Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/.mms/config/guest.json' }
+Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json'
+    at Error (native)
+[2023-11-04 22:55:52.507] [ERROR] syslog - settings: Error loading settings file: /root/.mms/config/guest.json
+[2023-11-04 22:55:52.507] [ERROR] syslog - { [Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/.mms/config/guest.json' }
+Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json'
+    at Error (native)
+[2023-11-04 22:56:13.001] [ERROR] syslog - settings: Error loading settings file: /root/.mms/config/guest.json
+[2023-11-04 22:56:13.001] [ERROR] syslog - { [Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/root/.mms/config/guest.json' }
+Error: ENOENT: no such file or directory, open '/root/.mms/config/guest.json'
+    at Error (native)

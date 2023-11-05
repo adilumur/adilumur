@@ -1,0 +1,8 @@
+{"_id":{"$oid":"6347ec2ecbf83c96236f2185"},"code":"BI-PA1","credits":6,"name":"Programs and algorithms 1","lectures":["Making some bugs","Making fewer bugs","All the ways to crash programs","How to get stuck in endless loop"]}
+{"_id":{"$oid":"6347ec2ecbf83c96236f2186"},"code":"BI-PA2","credits":7,"name":"Programs and algorithms 2","lectures":["Making almost no bugs","Picking proper STL container","Literary quality of compiler error messages"]}
+{"_id":{"$oid":"6347ec2ecbf83c96236f2187"},"code":"BI-PA3","credits":10,"name":"Programs and algorithms 3","lectures":["Writing operating systems on demand"]}
+{"_id":{"$oid":"6347ec2ecbf83c96236f2188"},"code":"BI-BLE","credits":4,"name":"Bible of Blender","lectures":["Will it blend?"]}
+{"_id":{"$oid":"6347ec2ecbf83c96236f2189"},"code":"BI-PHP","credits":4,"name":"PHP Hypertext Preprocessor","lectures":[]}
+{"_id":{"$oid":"6347ec2ecbf83c96236f218a"},"code":"BI-BIG","credits":4,"name":"Really BIG data","lectures":[]}
+{"_id":{"$oid":"6347ec2ecbf83c96236f218b"},"code":"BI-LITTLE","credits":6,"name":"A LITTLE data","lectures":["Relations","Projections","Selections","Aggregations","Normalizations","SQL"],"old_code":"BI-DBS"}
+{"_id":{"$oid":"6347ec2ecbf83c96236f218c"},"code":"BI-RTZW","credits":1,"name":"...","lectures":["Language features of C#"],"old_code":"BI-CS1"}

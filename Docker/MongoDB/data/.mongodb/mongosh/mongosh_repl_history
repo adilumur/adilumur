@@ -1,0 +1,183 @@
+db.students.find({})
+db.cases.find({})
+{}
+show db.students
+db.students
+db.students.count({birthplace:null})
+db.students.count(birthplace:null)
+db.students.count()
+show collections
+use uc2
+show dbs
+show db
+db
+show collections
+db.createUser({ user: "student", pwd: "student", roles: [{ role: "clusterAdmin", db: "admin" }, { role: "readAnyDatabase", db: "admin" }, "readWrite"] })
+use cases
+use admin
+exit
+show collections
+db
+show dbs
+db.createUser({ user: "student", pwd: "student", roles: [{ role: "clusterAdmin", db: "admin" }, { role: "readAnyDatabase", db: "admin" }, "readWrite"] })
+use cases
+use admin
+show collections
+db.students.count({birthplace:null})
+db.students.count
+db.students
+db.show
+test.show
+db.show
+ учше
+учше
+db.cities.aggregate([{$match: {}}])
+db.cities.aggregate([{$match:{$nin: [ db.students.aggregate([{ "$group": { "_id": "$birthplace"}}]) ]}}])
+db.students.aggregate([ { "$match": { "birthplace": "Praha" } }, { "$group": { "_id": "$study_group", "count": { "$sum": 1 } } }])
+db.cities.aggregate([{ $lookup: { "from": "students", "localField": "name", "foreignField": "birthplace", "as": "mesto pustoe" } }])
+}])
+    }
+        }
+$match:{ "name":{$eq:[]}
+db.cities.aggregate([{ $lookup: { "from":"cities", "localField":"birthplace", }, {
+db.cities.aggregate([{ $lookup: { "from": "cities", "localField": "name", "foreignField": "name", "as": "mesta puste" } }])
+db.cities.aggregate([{ $ne: [ db.students.aggregate([ { "$group": { "_id": "$birthplace" } }])] }])
+db.cities.aggregate([ { $nin: [ db.students.aggregate([ { "$group": { "_id": "$birthplace" } }])] }])
+db.students.aggregate([ { "$group": { "_id": "$birthplace" } }])
+{ "$group": { "_id": "$birthplace"} } ])
+                ])                db.students.aggregate([
+                    }
+                        _id: "$birthplace"
+db.students.aggregate([ "$group": {
+db.cities.aggregate([ { $elemMatch: { $nin: [ db.students.aggregate([ { "$group": { "_id": "$birthplace" } }])] } }])
+db.cities.aggregate([ { $match: { $all: [ db.students.aggregate([ { "$group": { "_id": "$birthplace" } }])] } }])
+db.cities.aggregate([{$match:{$nin: [ db.students.aggregate([{ "$group": { "_id": "$birthplace"}}]) ]}}])
+db.students.count({})
+db.students.count({birthplace:null})
+db.students.find( { $or: [ { study_group: 4 }, { study_group: 7 }], birthplace: "Praha" }, { name: 1, surname: 1, _id: 0 }). sort({ surname: 1 })
+db.students.find( { $or: [ {study_group: 4}, {study_group:7} ], birthplace: "Praha" }, {name:1, surname:1, _id:0} ).sort(surname:1)
+db.students.aggregate([ { "$match": { birthplace: "Praha" } }, { "$group": { _id: "$study_group", count: { "$sum": 1 } } }], { _id: 0, study_group: 1 })
+db.students.aggregate([ { "$match": { birthplace: "Praha" } }, { "$group": { _id: "$study_group", count: { "$sum": 1 } } }, { _id: 0, study_group: 1 }])
+db.students.aggregate([ { "$match": { birthplace: "Praha" } }, { "$group": { _id: "$study_group", count: { "$sum": 1 } } }])
+db.students.aggregate([ { "$match": { birthplace: "Praha" } }, { "$group": { study_group: "$study_group", count: { "$sum": 1 } } }])
+db.students.aggregate([ { "$match": { birthplace: "Praha" } }, { "$group": { _id: "$study_group", count: { "$sum": 1 } } }], { _id: 0, study_group: 1 })
+)
+    }
+        }
+            ]
+                ])
+                    }
+                        _id: "$birthplace"
+db.cities.aggregate( { "$match":{ "$nin":[ db.students.aggregate([ "$group": {
+)
+    }
+        }
+            }
+                ])
+                    }
+                        _id: "$birthplace"
+                    "$group": {
+db.cities.aggregate( { "$match":{ "$nin":{ db.students.aggregate([
+])
+    }
+        }
+            ]
+                ])
+                    }
+                        _id: "$birthplace"
+db.cities.aggregate([ { "$match":{ "$nin":[ db.students.aggregate([ "$group": {
+show collections
+db.students.aggregate([ { "$match": { birthplace: "Praha" } }, { "$group": { _id: "$study_group", count: { "$sum": 1 } } }])
+db.students.updateMany( { birthplace: { $eq: "Brambory" } }, { $push: { subject: { code: "BI-UC2", grade: 'A' } } })
+db.students.insertMany([ { code: "BI-UC2", name: "Uprava cibuli 2", lectures: ["BLA", "BLABLA", "BLABLABLA"], credits: 3, color: "pink" }])
+db.students.find({$or:[{study_group: 4}, {study_group:7},],birthplace: "Praha"}, {name:1, surname:1, _id:0})
+db.students.count({birthplace:null})
+db.students.find({birthplace:false})
+db.students.find({subjects:{$elemMatch:{code:'BI-PA3'}}})
+db.students.find({subjects:{$elemMatch:{$all:{grade:{$eq:'A'}}}}}).limit(1)
+db.students.find({subjects:{$elemMatch:{grade:'A'}}})
+db.subjects.find({code:"BI-RTZW"})
+db.students.find({subjects: {date_of_exam: {$eq: 'ISODate("2019-09-12T10:04:15.416Z")'}}}).limit(1)
+db.students.find({subjects:{date_of_exam:{$eq:'ISODate("2019-09-12T10:04:15.416Z")'}}}).limit(1)
+db.students.find({subjects:{date_of_exam:'ISODate("2019-09-12T10:04:15.416Z")'}}).limit(1)
+db.students.find({subjects:{date_of_exam:'ISODate("2019-09-12T10:04:15.416")'}}).limit(1)
+db.students.find({subjects:{date_of_exam:{$eq:'ISODate("2019-09-12T10:04:15.416")'}}}).limit(1)
+db.students.find({subjects:{date_of_exam:{$eq:'2019-09-12T10:04:15.416'}}}).limit(1)
+db.students.find({subjects:{date_of_exam:{$eq:'2019-09-12T10:04:15.416Z'}}}).limit(1)
+db.students.find({subjects:{$elemMatch:{$all:{grade:{$eq:'D'}}}}}).limit(1)
+db.students.find({subjects:{$elemMatch:{grade:{$eq:'D'}}}}).limit(1)
+db.students.find({subjects:{$elemMatch:{grade:{$lt:'D'}}}})
+db.students.find({subjects:{$exists:false}})
+db.students.find({subjects:{$exists:true}})
+db.students.find({subjects:{$elemMatch:{code:"BI-RTZW"}}})
+db.students.find({$search:{$text:{code:"BI-RTZW"}}})
+db.students.find({&search:{$text:{code:"BI-RTZW"}}})
+db.students.find({search:{$text:{code:"BI-RTZW"}}})
+db.students.find({$text:{code:"BI-RTZW"}}).limit(1)
+db.students.find({$text:"BI-RTZW"}).limit(1)
+db.students.find({$test:"BI-RTZW"}).limit(1)
+db.students.find({$or:[{birthplace:'Praha'}, {name:'Bilbo'}]}).limit(1)
+db.students.find({$and:[{birthplace:'Praha'}, {name:'Bilbo'}]}).limit(1)
+db.students.find({birthplace:'Praha'}, {name:'Bilbo'}).limit(1)
+db.students.find({birthplace:'Praha'}, {name:'Bilbo'})
+db.students.find({$and:[{birthplace:'Praha'}, {name:'Bilbo'},{$elemMatch:{code:'BI-BIG'}}]})
+db.students.find({$and:[{birthplace:'Praha'}, {name:'Bilbo'}{$elemMatch:{code:'BI-BIG'}}]})
+db.students.find({$and:[{birthplace:'Praha'}, {name:'Bilbo'}{$elemMatch:{code:'BI-BIG}}]})
+db.students.find({$and:[{birthplace:'Praha'}, {name:'Bilbo'}]})
+db.students.find({$or:[{birthplace:'Praha'}, {name:'Bilbo'}]})
+it
+db.students.find({birthplace:'Praha'})
+db.students.find({name:'Bilbo'})
+db.students.find({}).limit(1)
+show collections
+use uc2
+show dbs
+show users
+show user
+show users
+use admin
+db.cities.find({}).limit(1)
+db.students.find({}).limit(3)
+show collections
+show collectins
+show collecthions
+show collecthins
+show dbs
+use uc2
+show users
+show dbs
+use uc2
+use admin
+show dbs
+use admin
+show collections
+use uc2
+show dbs
+db
+dbs
+use admin
+dbss
+use admin
+dbsdWrite"]})
+show dbs
+use uc2
+use admin
+show dbs
+use admin
+show collections
+use uc2
+show dbs
+db
+dbs
+use admin
+dbss
+use admin
+dbsss
+use uc2
+show dbs
+db
+dbs
+use admin
+dbss
+use admin
+dbss
