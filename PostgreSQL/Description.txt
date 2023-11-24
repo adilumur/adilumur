@@ -1,0 +1,25 @@
+The company Zreality deals with renting an apartment between a tenant and an owner.
+Zreality is an international company, it has 7 branches in 7 countries (Zreality.Czech Republic, Zreality.Kazakhstan, Zreality.Ukraine, Zreality.Russia, Zreality.Slovakia, Zreality.USA, Zreality.Belarus)
+
+In our database, all roles (tenant, owner, employee) has one scheme in the table "osoba".
+
+Surely the company needs employees, one or more, to conduct meetings.
+
+Zreality always needs to know the first and last name of the employees, as well as their personal number, which must be unique.
+
+Zreality, as an intermediary, must draw up a company-tenant ("smlouva_firma_najemce") and company-owner ("smlouva_firma_vlastnik") contract.
+As always and everywhere, the contract must contain the id (contract number), the date of signing and the terms of cooperation (we do not need the terms of cooperation in our database, because if we keep the contract number, we will be able to find the document/contract with these terms).
+
+But the tenant does not have to use the services of an intermediary, just like the owner.
+
+Certainly, in addition to company-tenant, company-owner contracts, the owner (we assume that the owner of the apartment is one person) must draw up a contract with the tenant (rental contract), which will contain the relations between the owner and the tenant. Like all documents, this contract must contain the date of signing, id (contract number), terms of cooperation (we don't need the terms of cooperation in our database, because if we keep the contract number, we will be able to find the document/contract with these terms).
+Also, the rental agreement contains the rental dates (start and end), date of signing, rent (payment) (amount and date of payment) and terms of cooperation (we do not need the terms of cooperation in our database, because if we keep the number of the contract, we will be able to find the document/contract with these conditions).
+
+To draw up all contracts, it is necessary to keep the personal number, name, surname, date of birth of the tenant and the owner, plus for the rental contract, the owner may or may not need to keep: where the person gets the money from and how much, the person's permanent residence.
+
+One or more tenants can live in the apartment, so a contract must be drawn up for each tenant.
+
+Of course, the apartment is located in some building on some floor, has a number.
+Similarly, a house is located on a certain street, has a certain number, is in a certain city, has a postal code, is in a certain country.
+
+Owner, lessee, employee, are any persons whose name, surname, social security number, date of birth and their ID are to be kept.

@@ -1,8 +1,7 @@
--- odeberu pokud existuje funkce na oodebrání tabulek a sekvencí
+-- remove (if exist) existing tables
 DROP FUNCTION IF EXISTS remove_all();
 
--- vytvořím funkci která odebere tabulky a sekvence
--- chcete také umět psát PLSQL? Zapište si předmět BI-SQL ;-)
+-- Using PL/SQL create function to drop tables and sequences
 CREATE or replace FUNCTION remove_all() RETURNS void AS $$
 DECLARE
     rec RECORD;
@@ -46,9 +45,7 @@ BEGIN
     RETURN;
 END;
 $$ LANGUAGE plpgsql;
--- zavolám funkci co odebere tabulky a sekvence - Mohl bych dropnout celé schéma a znovu jej vytvořit, použíjeme však PLSQL
 select remove_all();
-
 -- End of removing
 
 CREATE TABLE adresa (

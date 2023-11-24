@@ -1,12 +1,24 @@
-Smycky **Osoba - Zamestnanec - Firma - Smlouva_firma_vlastnik - Vlastnik - Osoba**, 
-									**Osoba - Najemce - Smlouva_najemni - Vlastnik - Osoba **,
-									**Osoba - Najemce - Smlouva_najemni - Byt - Vlastnik - Osoba**,
-									**Osoba - Zamestnanec - Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni - Vlastnik - Osoba **,
-									**Osoba - Zamestnanec - Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni - Byt - Vlastnik - Osoba**, zpusobujou problemu, kvuli ktere vlastnikem, najemcem a zamenstnancem muze byt jeden clovek, to nechceme, proto jsme zavedli IO2.
+Loops: 
+**Osoba - Zamestnanec - Firma - Smlouva_firma_vlastnik - Vlastnik - Osoba**, 
+**Osoba - Najemce - Smlouva_najemni - Vlastnik - Osoba **,
+**Osoba - Najemce - Smlouva_najemni - Byt - Vlastnik - Osoba**,
+**Osoba - Zamestnanec - Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni - Vlastnik - Osoba **,
+**Osoba - Zamestnanec - Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni - Byt - Vlastnik - Osoba**, 
+
+they cause the problem that the owner (Vlastnik), tenant (Najemce) and employee (Zamestnanec) can be one person, we don't want that, that's why we introduced IO2.
 									
-Smycky **Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni  - Vlastnik - Smlouva_firma_vlastnik - Firma**,
-									**Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni  - Byt - Vlastnik - Smlouva_firma_vlastnik - Firma**,  nezpusobujou zadny problem, oni rikaji, ze Vlastnik a Najemce pouzili sluzby Firmy, pro pouziti sluzeb firmy je treba podepsat Smlouvy s firmou, pak samozrejme vlastnik sestavi najemni smlouvu, kterou musi podepsat najemce, a ktera obsahuje informace Bytu, ktery najemce si pronajme.
+Loops: 
+**Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni  - Vlastnik - Smlouva_firma_vlastnik - Firma**,
+**Firma - Smlouva_firma_najemce - Najemce - Smlouva_najemni  - Byt - Vlastnik - Smlouva_firma_vlastnik - Firma**,  
 
-Smycka **Vlastnik - Byt - Smlouva_najemni - Vlastnik**, take nezpusobuje zadny problem, tato smycka rika, ze vlastnik sestavil smlouva_najemni, ktera obsahuje informace bytu. 
+they do not cause any problem, they say that the Owner and the Tenant used the services of the Company. In order to use the services of the company, it is necessary to sign Contracts with the company, then of course the owner draws up a rental agreement, which the tenant must sign, and which contains information about the Apartment that the tenant will rent.
 
-Smycka **Osoba - Najemce - Smlouva_firma_najemce - Firma - Smlouva_firma_vlastnik - Vlastnik - Osoba**, nezpusobuje problem, tato smycka rika, ze najemce a vlastnik pouzili sluzby firmy, ale oni se nedomluvili a neuzavreli smlouvu najemni.
+Loop: 
+**Vlastnik - Byt - Smlouva_najemni - Vlastnik**, 
+
+also does not cause any problem, this loop says that the owner has drawn up a contract, which contains the apartment information.
+
+Loop:
+**Osoba - Najemce - Smlouva_firma_najemce - Firma - Smlouva_firma_vlastnik - Vlastnik - Osoba**, 
+
+does not cause a problem, this loop says that the tenant and the owner used the services of the company, but they did not agree and did not conclude a rental agreement.

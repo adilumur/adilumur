@@ -1,5 +1,4 @@
--- smazání všech záznamů z tabulek
-
+-- Remove all elements from all tables
 CREATE or replace FUNCTION clean_tables() RETURNS void AS $$
 declare
   l_stmt text;
@@ -14,7 +13,7 @@ end;
 $$ LANGUAGE plpgsql;
 select clean_tables();
 
--- reset sekvenci
+-- reset sequence
 
 CREATE or replace FUNCTION restart_sequences() RETURNS void AS $$
 DECLARE
@@ -26,10 +25,9 @@ BEGIN
   END LOOP;
 END $$ LANGUAGE plpgsql;
 select restart_sequences();
--- konec resetu
+-- end reset
 
--- konec mazání
--- mohli bchom použít i jednotlivé příkazy truncate na každo tabulku
+-- can be used truncate command for each table
 
 insert into osoba (id_osoba, osobni_cislo, jmeno, prijmeni, datum_narozeni) values (1, '9045581612', 'Lynette', 'Tame', '1957-07-19');
 insert into osoba (id_osoba, osobni_cislo, jmeno, prijmeni, datum_narozeni) values (2, '9172450584', 'Edy', 'Soda', '1954-12-04');
